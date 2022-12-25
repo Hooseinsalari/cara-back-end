@@ -32,6 +32,10 @@ app.use("/api/user", userRouter);
 app.use("/api/product", productRouter);
 app.use("/api/order", orderRouter);
 
+app.get('/', (req, res) => {
+  res.sendStatus(200)
+})
+
 // // PORT
 const port = process.env.PORT || 5000;
 
